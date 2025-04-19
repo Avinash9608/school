@@ -1,0 +1,294 @@
+/* History Page Styles */
+
+/* History Intro Section */
+.history-intro-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.history-intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.history-intro-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.history-intro-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.history-intro-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.history-intro-image .placeholder-image {
+  background-image: url(https://media.istockphoto.com/id/1247004279/photo/the-school-in-old-indian-house.jpg?s=2048x2048&w=is&k=20&c=32omD603gTzkW-QqOXvaBDRGG7kCof5ckJoViRuWU5s=);
+  background-size: cover; /* Make image cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* Founders Section */
+.founders-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.founders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.founder-card {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-10px);
+}
+
+.founder-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.founder-image .placeholder-image {
+  background-size: cover; /* Make image cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 200%;
+  background-image: url(https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.founder-info {
+  padding: 20px;
+}
+
+.founder-info h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.founder-position {
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.founder-quote {
+  font-style: italic;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  border-left: 3px solid #3498db;
+}
+
+.founder-bio {
+  line-height: 1.7;
+}
+
+/* Detailed Timeline Section */
+.detailed-timeline-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.detailed-timeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.detailed-timeline {
+  position: relative;
+}
+
+.timeline-era {
+  margin-bottom: 60px;
+}
+
+.era-title {
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.era-events {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px solid #3498db;
+}
+
+.era-event {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.era-event:last-child {
+  margin-bottom: 0;
+}
+
+.era-event::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.event-year {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #34495e;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.event-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-content h4 {
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.event-content p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.event-image {
+  margin-top: 15px;
+}
+
+.event-image .placeholder-image {
+  background-size: cover; /* Make image cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url(https://www.pmindia.gov.in/wp-content/uploads/2019/01/T2019012362081.jpg);
+}
+
+/* Alumni Testimonials Section */
+.alumni-testimonials-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.alumni-testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+}
+
+.alumni-testimonial {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.alumni-testimonial:hover {
+  transform: translateY(-5px);
+}
+
+.alumni-image {
+  flex: 0 0 200px;
+}
+
+.alumni-image .placeholder-image {
+  height: 100%;
+  min-height: 200px;
+}
+
+.alumni-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alumni-quote {
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.alumni-info h4 {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.alumni-info p {
+  color: #7f8c8d;
+}
+
+.alumni-link {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .alumni-testimonial {
+    flex-direction: column;
+  }
+
+  .alumni-image {
+    flex: 0 0 200px;
+  }
+
+  .alumni-image .placeholder-image {
+    min-height: 200px;
+  }
+}

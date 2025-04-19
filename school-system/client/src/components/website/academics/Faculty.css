@@ -1,0 +1,689 @@
+/* Faculty Page Styles */
+
+/* Faculty Intro Section */
+.faculty-intro-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.faculty-intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faculty-intro-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.faculty-intro-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.faculty-stats {
+  flex: 1;
+  min-width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.faculty-stat {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.faculty-stat:hover {
+  transform: translateY(-10px);
+}
+
+.faculty-stat .stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.faculty-stat .stat-label {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+/* Leadership Team Section */
+.leadership-team-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.leadership-team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.leader-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-10px);
+}
+
+.leader-image {
+  flex: 0 0 250px;
+}
+
+.leader-image .placeholder-image {
+  height: 100%;
+  min-height: 300px;
+}
+
+.leader-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.leader-info h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.leader-position {
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.leader-qualification {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.leader-description {
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.btn-sm {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-sm:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+/* Department Heads Section */
+.department-heads-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.department-heads-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.department-head-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.department-head-card:hover {
+  transform: translateY(-10px);
+}
+
+.head-image {
+  flex: 0 0 200px;
+}
+
+.head-image .placeholder-image {
+  height: 100%;
+  min-height: 250px;
+}
+
+.head-info {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.head-info h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.head-position {
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.head-qualification {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.head-description {
+  line-height: 1.7;
+}
+
+/* Teaching Staff Section */
+.teaching-staff-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.teaching-staff-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.staff-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.staff-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.staff-departments {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.staff-department {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.staff-department h3 {
+  color: #34495e;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.teacher-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-5px);
+}
+
+.teacher-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.teacher-image .placeholder-image {
+  height: 100%;
+}
+
+.teacher-info {
+  padding: 15px;
+}
+
+.teacher-info h4 {
+  color: #34495e;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.teacher-position {
+  color: #3498db;
+  margin-bottom: 5px;
+}
+
+.teacher-qualification {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.department-link {
+  text-align: center;
+}
+
+/* Specialist Teachers Section */
+.specialist-teachers-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.specialist-teachers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.specialist-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.specialist-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.specialist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 30px;
+}
+
+.specialist-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.specialist-card:hover {
+  transform: translateY(-10px);
+}
+
+.specialist-image {
+  flex: 0 0 150px;
+}
+
+.specialist-image .placeholder-image {
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.specialist-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.specialist-info h3 {
+  color: #34495e;
+  margin-bottom: 5px;
+  font-size: 1.3rem;
+}
+
+.specialist-position {
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.specialist-qualification {
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.specialist-description {
+  line-height: 1.7;
+}
+
+/* Support Staff Section */
+.support-staff-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.support-staff-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.support-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.support-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.support-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+}
+
+.support-category {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.support-category:hover {
+  transform: translateY(-10px);
+}
+
+.category-icon {
+  font-size: 2rem;
+  color: #e74c3c;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.support-category h3 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+.staff-list {
+  padding-left: 20px;
+}
+
+.staff-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Professional Development Section */
+.professional-development-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.professional-development-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.development-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.development-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.development-content h3 {
+  color: #34495e;
+  margin: 30px 0 20px;
+  font-size: 1.5rem;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.initiative-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-icon {
+  font-size: 1.5rem;
+  color: #9b59b6;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(155, 89, 182, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+.initiative-card h4 {
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.initiative-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.recognition-list {
+  padding-left: 20px;
+}
+
+.recognition-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.development-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.development-image .placeholder-image {
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Join Our Team Section */
+.join-team-section {
+  background-color: #3498db;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.join-team-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.join-team-content {
+  text-align: center;
+}
+
+.join-team-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.join-team-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.join-team-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.benefits-list {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.join-team-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.join-team-buttons .btn-primary {
+  background-color: #fff;
+  color: #3498db;
+}
+
+.join-team-buttons .btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Faculty Testimonials Section */
+.faculty-testimonials-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.faculty-testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonial-card {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-content {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.testimonial-content i {
+  font-size: 2rem;
+  color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+.testimonial-content p {
+  padding-left: 40px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.testimonial-author h4 {
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.testimonial-author p {
+  color: #7f8c8d;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .faculty-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .specialist-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .support-categories {
+    grid-template-columns: 1fr;
+  }
+  
+  .join-team-buttons {
+    flex-direction: column;
+  }
+  
+  .join-team-buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

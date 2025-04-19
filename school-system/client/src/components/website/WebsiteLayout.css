@@ -1,0 +1,17 @@
+/* Website Layout Styles */
+.website-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.website-main {
+  flex: 1;
+  margin-top: 120px; /* Adjust based on header height */
+}
+
+@media (max-width: 768px) {
+  .website-main {
+    margin-top: 70px; /* Adjust for smaller header on mobile */
+  }
+}

@@ -1,0 +1,488 @@
+/* Vision Mission Page Styles */
+
+/* Vision Intro Section */
+.vision-intro-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.vision-intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vision-intro-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-intro-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.vision-intro-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.vision-intro-image .placeholder-image {
+  background-size: cover; /* Make image cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url(https://images.unsplash.com/photo-1636772523547-5577d04e8dc1?q=80&w=2066&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+/* Vision Statement Section */
+.vision-statement-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.vision-statement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vision-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.vision-icon {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 50%;
+}
+
+.vision-header h2 {
+  color: #34495e;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.vision-content {
+  padding-left: 100px;
+}
+
+.vision-quote {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.vision-quote::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5rem;
+  color: #3498db;
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.vision-quote p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #34495e;
+  padding-left: 40px;
+}
+
+.vision-explanation p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.vision-list {
+  padding-left: 20px;
+}
+
+.vision-list li {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Mission Statement Section */
+.mission-statement-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.mission-statement-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.mission-icon {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 50%;
+}
+
+.mission-header h2 {
+  color: #34495e;
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.mission-content {
+  padding-left: 100px;
+}
+
+.mission-quote {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mission-quote::before {
+  content: '"';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5rem;
+  color: #e74c3c;
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.mission-quote p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #34495e;
+  padding-left: 40px;
+}
+
+.mission-explanation p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.mission-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.mission-pillar {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.mission-pillar:hover {
+  transform: translateY(-10px);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.mission-pillar h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.mission-pillar p {
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Core Values Section */
+.core-values-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.core-values-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.values-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: #2ecc71;
+  margin-bottom: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 204, 113, 0.1);
+  border-radius: 50%;
+}
+
+.value-card h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.value-card p {
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Strategic Goals Section */
+.strategic-goals-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.strategic-goals-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.goals-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.goals-timeline {
+  position: relative;
+  padding: 40px 0;
+}
+
+.goals-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 3px;
+  background-color: #3498db;
+}
+
+.goal-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 80px;
+}
+
+.goal-item:last-child {
+  margin-bottom: 0;
+}
+
+.goal-number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.goal-content {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goal-content h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.goal-content p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.goal-objectives {
+  padding-left: 20px;
+}
+
+.goal-objectives li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Leadership Commitment Section */
+.leadership-commitment-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.leadership-commitment-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.commitment-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.commitment-content h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.commitment-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.commitment-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.commitment-list li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.commitment-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.commitment-image .placeholder-image {
+  background-size: cover; /* Make image cover the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-image: url(https://media.istockphoto.com/id/2166780646/photo/happy-students-on-schoolyard.jpg?s=2048x2048&w=is&k=20&c=paVzRcnloNTRT8avs7DgAEugHbQ4a20Kgg4i1XIyq1M=);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .vision-content,
+  .mission-content {
+    padding-left: 0;
+  }
+
+  .vision-header,
+  .mission-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-icon,
+  .mission-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .vision-quote p,
+  .mission-quote p {
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
