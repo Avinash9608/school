@@ -17,8 +17,69 @@
   margin: 0;
 }
 
+.sidebar-section {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
 .sidebar-item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.has-sub > .sidebar-link {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand-icon {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-subnav {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+  background: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar-subnav.expanded {
+  max-height: 300px; /* Adjust based on your content */
+}
+
+.sidebar-subnav li {
+  border: none;
+}
+
+.sidebar-subnav .sidebar-link {
+  font-size: 0.97rem;
+  padding: 10px 20px 10px 35px;
+  color: #ecf0f1;
+  background: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-subnav .sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
 }
 
 .sidebar-link {

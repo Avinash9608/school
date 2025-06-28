@@ -168,6 +168,13 @@
   color: #3498db;
 }
 
+/* Footer Logo Image */
+.footer-logo-img {
+  max-height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
   .footer-column {
@@ -191,5 +198,9 @@
 
   .footer-bottom-links a {
     margin: 0 10px;
+  }
+
+  .footer-logo-img {
+    max-height: 50px;
   }
 }

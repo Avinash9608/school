@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../config/api';
 
 // Create context
 export const AuthContext = createContext();
@@ -29,7 +30,7 @@ export const AuthProvider = ({ children }) => {
       setAuthToken(token);
       
       try {
-        const res = await axios.get('/api/auth/me');
+        const res = await axios.get(`${API_URL}/api/auth/me`);
         
         setUser(res.data.user);
         setIsAuthenticated(true);
@@ -48,7 +49,7 @@ export const AuthProvider = ({ children }) => {
   // Register user
   const register = async (formData) => {
     try {
-      const res = await axios.post('/api/auth/register', formData);
+      const res = await axios.post(`${API_URL}/api/auth/register`, formData);
       
       setToken(res.data.token);
       setAuthToken(res.data.token);
@@ -64,7 +65,7 @@ export const AuthProvider = ({ children }) => {
   // Login user
   const login = async (username, password) => {
     try {
-      const res = await axios.post('/api/auth/login', { username, password });
+      const res = await axios.post(`${API_URL}/api/auth/login`, { username, password });
       
       setToken(res.data.token);
       setAuthToken(res.data.token);
@@ -88,7 +89,7 @@ export const AuthProvider = ({ children }) => {
   // Update user profile
   const updateProfile = async (formData) => {
     try {
-      const res = await axios.put('/api/auth/updateprofile', formData);
+      const res = await axios.put(`${API_URL}/api/auth/updateprofile`, formData);
       
       setUser(res.data.user);
       
@@ -102,7 +103,7 @@ export const AuthProvider = ({ children }) => {
   // Change password
   const changePassword = async (currentPassword, newPassword) => {
     try {
-      await axios.put('/api/auth/changepassword', { currentPassword, newPassword });
+      await axios.put(`${API_URL}/api/auth/changepassword`, { currentPassword, newPassword });
       
       return { success: true };
     } catch (err) {
