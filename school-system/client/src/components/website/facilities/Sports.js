@@ -6,9 +6,7 @@ import {
   FaSwimmer,
   FaFutbol,
   FaBasketballBall,
-  FaTableTennis,
   FaVolleyballBall,
-  FaHockeyPuck,
   FaTrophy,
 } from "react-icons/fa";
 
@@ -58,54 +56,6 @@ const Sports = () => {
     "https://images.pexels.com/photos/976873/pexels-photo-976873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
   const indoorSports =
     "https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80";
-
-  // State for achievement counts
-  const [footballChampions, setFootballChampions] = useState(0);
-  const [swimmingMedals, setSwimmingMedals] = useState(0);
-  const [basketballWins, setBasketballWins] = useState(0);
-
-  useEffect(() => {
-    // Animate achievement numbers
-    const animateAchievements = () => {
-      // Football champions count (up to 1)
-      let footballCount = 0;
-      const footballInterval = setInterval(() => {
-        footballCount += 0.05;
-        if (footballCount >= 1) {
-          setFootballChampions(1);
-          clearInterval(footballInterval);
-        } else {
-          setFootballChampions(Math.floor(footballCount));
-        }
-      }, 100);
-
-      // Swimming medals count (up to 5)
-      let swimmingCount = 0;
-      const swimmingInterval = setInterval(() => {
-        swimmingCount += 0.25;
-        if (swimmingCount >= 5) {
-          setSwimmingMedals(5);
-          clearInterval(swimmingInterval);
-        } else {
-          setSwimmingMedals(Math.floor(swimmingCount));
-        }
-      }, 100);
-
-      // Basketball wins count (up to 3)
-      let basketballCount = 0;
-      const basketballInterval = setInterval(() => {
-        basketballCount += 0.15;
-        if (basketballCount >= 3) {
-          setBasketballWins(3);
-          clearInterval(basketballInterval);
-        } else {
-          setBasketballWins(Math.floor(basketballCount));
-        }
-      }, 100);
-    };
-
-    animateAchievements();
-  }, []);
 
   return (
     <div className="website-container">

@@ -273,7 +273,7 @@ const Facilities = () => {
             </div>
           </div>
           <div className="tour-cta">
-            <a href="#" className="btn btn-primary">Start Virtual Tour</a>
+            <button className="btn btn-primary" onClick={() => window.open('/virtual-tour', '_blank')}>Start Virtual Tour</button>
             <p>Or visit our campus in person. <Link to="/contact">Schedule a visit</Link></p>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { initFaqToggles } from "../utils/faqToggle";
-import { Link } from "react-router-dom";
 import "../Website.css";
 import "./Contact.css";
 
@@ -430,51 +429,41 @@ const Contact = () => {
             following us on social media.
           </p>
           <div className="social-links">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               className="social-link"
+              onClick={() => window.open('https://facebook.com/excellenceacademy', '_blank')}
             >
               <i className="fab fa-facebook-f"></i>
               <span>Facebook</span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
               className="social-link"
+              onClick={() => window.open('https://twitter.com/excellenceacademy', '_blank')}
             >
               <i className="fab fa-twitter"></i>
               <span>Twitter</span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
               className="social-link"
+              onClick={() => window.open('https://instagram.com/excellenceacademy', '_blank')}
             >
               <i className="fab fa-instagram"></i>
               <span>Instagram</span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
               className="social-link"
+              onClick={() => window.open('https://youtube.com/excellenceacademy', '_blank')}
             >
               <i className="fab fa-youtube"></i>
               <span>YouTube</span>
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
               className="social-link"
+              onClick={() => window.open('https://linkedin.com/company/excellenceacademy', '_blank')}
             >
               <i className="fab fa-linkedin-in"></i>
               <span>LinkedIn</span>
-            </a>
+            </button>
           </div>
         </div>
       </section>

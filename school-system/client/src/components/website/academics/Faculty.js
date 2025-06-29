@@ -280,7 +280,7 @@ const Faculty = () => {
                 </div>
               </div>
               <div className="department-link">
-                <a href="#" className="btn btn-sm">View All Primary School Teachers</a>
+                <button className="btn btn-sm" onClick={() => window.open('/faculty/primary', '_blank')}>View All Primary School Teachers</button>
               </div>
             </div>
             <div className="staff-department">
@@ -328,7 +328,7 @@ const Faculty = () => {
                 </div>
               </div>
               <div className="department-link">
-                <a href="#" className="btn btn-sm">View All Middle School Teachers</a>
+                <button className="btn btn-sm" onClick={() => window.open('/faculty/middle', '_blank')}>View All Middle School Teachers</button>
               </div>
             </div>
             <div className="staff-department">
@@ -376,7 +376,7 @@ const Faculty = () => {
                 </div>
               </div>
               <div className="department-link">
-                <a href="#" className="btn btn-sm">View All Secondary School Teachers</a>
+                <button className="btn btn-sm" onClick={() => window.open('/faculty/secondary', '_blank')}>View All Secondary School Teachers</button>
               </div>
             </div>
           </div>
@@ -619,7 +619,7 @@ const Faculty = () => {
               <li>Opportunity to make a meaningful impact on students' lives</li>
             </ul>
             <div className="join-team-buttons">
-              <a href="#" className="btn btn-primary">View Current Openings</a>
+              <button className="btn btn-primary" onClick={() => window.open('/careers', '_blank')}>View Current Openings</button>
               <Link to="/contact" className="btn btn-secondary">Contact HR Department</Link>
             </div>
           </div>

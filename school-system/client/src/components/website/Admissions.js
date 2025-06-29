@@ -288,10 +288,10 @@ const Admissions = () => {
             </ul>
           </div>
           <div className="fee-download">
-            <a href="#" className="btn btn-primary">
+            <button className="btn btn-primary" onClick={() => window.open('/fee-structure.pdf', '_blank')}>
               <i className="fas fa-download"></i> Download Complete Fee
               Structure
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -455,7 +455,7 @@ const Admissions = () => {
               <div className="form-group form-checkbox">
                 <input type="checkbox" id="terms" required />
                 <label htmlFor="terms">
-                  I agree to the <a href="#">terms and conditions</a> and
+                  I agree to the <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">terms and conditions</a> and
                   consent to the processing of my personal data.
                 </label>
               </div>
