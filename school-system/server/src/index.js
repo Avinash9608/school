@@ -26,6 +26,25 @@ app.get("/", (req, res) => {
   res.send("School Management System API is running");
 });
 
+// Health check route (no database required)
+app.get("/health", (req, res) => {
+  res.json({
+    success: true,
+    message: "Server is running",
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || "development"
+  });
+});
+
+// Test route for debugging
+app.get("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "Test route working",
+    routes: ["auth", "website", "header", "footer"]
+  });
+});
+
 // Import routes
 const authRoutes = require("./routes/auth.routes");
 const websiteRoutes = require("./routes/website.routes");
@@ -33,6 +52,13 @@ const headerRoutes = require("./routes/header.routes");
 const footerRoutes = require("./routes/footer.routes");
 const adminRoutes = require("./routes/admin.routes");
 const mediaRoutes = require("./routes/media.routes");
+
+try {
+  console.log("All routes imported successfully");
+} catch (error) {
+  console.error("Error importing routes:", error);
+  throw error;
+}
 /*
 const studentRoutes = require('./routes/student.routes');
 const classRoutes = require('./routes/class.routes');
@@ -76,10 +102,29 @@ app.use((err, req, res, next) => {
 // Connect to MongoDB
 const MONGO_URI =
   process.env.MONGO_URI || "mongodb://localhost:27017/school-management";
+
+console.log("Attempting to connect to MongoDB...");
+console.log("MongoDB URI:", MONGO_URI ? "Set" : "Not set");
+
 mongoose
   .connect(MONGO_URI)
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .then(() => {
+    console.log("MongoDB connected successfully");
+    console.log("Database:", mongoose.connection.name);
+  })
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
+    console.error("Please check your MONGO_URI environment variable");
+  });
+
+// Handle MongoDB connection errors
+mongoose.connection.on('error', (err) => {
+  console.error('MongoDB connection error:', err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('MongoDB disconnected');
+});
 
 // For local development
 if (process.env.NODE_ENV !== "production") {

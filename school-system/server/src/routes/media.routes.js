@@ -6,7 +6,7 @@ const fs = require("fs");
 
 // Import controllers
 const mediaController = require("../controllers/media.controller");
-const auth = require("../middleware/auth");
+const { protect: auth } = require("../middleware/auth");
 
 // Configure multer for file uploads
 const storage = multer.diskStorage({

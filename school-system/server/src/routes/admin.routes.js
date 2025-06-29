@@ -1,17 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const auth = require("../middleware/auth");
+const { protect: auth } = require("../middleware/auth");
 
 // Import controllers
 const pageController = require("../controllers/page.controller");
 const contentController = require("../controllers/content.controller");
 const mediaController = require("../controllers/media.controller");
 
+// Import models
+const Content = require("../models/Content");
+
 // Admin Dashboard Routes
 router.get("/dashboard/stats", auth, async (req, res) => {
   try {
     const Page = require("../models/Page");
-    const Content = require("../models/Content");
     const Media = require("../models/Media");
     const ActivityLog = require("../models/ActivityLog");
 
