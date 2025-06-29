@@ -57,6 +57,58 @@ const getContentBySection = async (req, res) => {
   }
 };
 
+// Get all content (for admin)
+const getAllContent = async (req, res) => {
+  try {
+    const content = await Content.find({})
+      .populate("pageId", "title slug")
+      .populate("lastModifiedBy", "firstName lastName email username")
+      .sort({ createdAt: -1 });
+
+    res.json({
+      success: true,
+      data: content,
+    });
+  } catch (error) {
+    console.error("Error fetching content:", error);
+    res.status(500).json({
+      success: false,
+      message: "Error fetching content",
+      error: error.message,
+    });
+  }
+};
+
+// Get content by ID (for admin)
+const getContentById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    
+    const content = await Content.findById(id)
+      .populate("pageId", "title slug")
+      .populate("lastModifiedBy", "firstName lastName email username");
+
+    if (!content) {
+      return res.status(404).json({
+        success: false,
+        message: "Content not found",
+      });
+    }
+
+    res.json({
+      success: true,
+      data: content,
+    });
+  } catch (error) {
+    console.error("Error fetching content:", error);
+    res.status(500).json({
+      success: false,
+      message: "Error fetching content",
+      error: error.message,
+    });
+  }
+};
+
 // Create new content
 const createContent = async (req, res) => {
   try {
@@ -340,6 +392,8 @@ const bulkUpdateContent = async (req, res) => {
 module.exports = {
   getContentByPageId,
   getContentBySection,
+  getAllContent,
+  getContentById,
   createContent,
   updateContent,
   deleteContent,

@@ -323,4 +323,5 @@ module.exports = {
   updatePage,
   deletePage,
   togglePageStatus,
+  updatePageStatus: togglePageStatus,
 }; 

@@ -31,6 +31,8 @@ const authRoutes = require("./routes/auth.routes");
 const websiteRoutes = require("./routes/website.routes");
 const headerRoutes = require("./routes/header.routes");
 const footerRoutes = require("./routes/footer.routes");
+const adminRoutes = require("./routes/admin.routes");
+const mediaRoutes = require("./routes/media.routes");
 /*
 const studentRoutes = require('./routes/student.routes');
 const classRoutes = require('./routes/class.routes');
@@ -47,6 +49,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/website", websiteRoutes);
 app.use("/api/header", headerRoutes);
 app.use("/api/footer", footerRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/media", mediaRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "../../uploads")));
 /*
 app.use('/api/students', studentRoutes);

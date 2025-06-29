@@ -13,6 +13,19 @@ const listMedia = async (req, res) => {
   }
 };
 
+// Get all media (for admin)
+const getAllMedia = async (req, res) => {
+  try {
+    const media = await Media.find({})
+      .populate("uploadedBy", "firstName lastName email username")
+      .sort({ createdAt: -1 });
+    res.json({ success: true, data: media });
+  } catch (error) {
+    console.error("Error fetching media:", error);
+    res.status(500).json({ success: false, message: "Error fetching media", error: error.message });
+  }
+};
+
 // Upload media (single file)
 const uploadMedia = async (req, res) => {
   try {
@@ -75,6 +88,7 @@ const deleteMedia = async (req, res) => {
 
 module.exports = {
   listMedia,
+  getAllMedia,
   uploadMedia,
   deleteMedia,
 }; 
